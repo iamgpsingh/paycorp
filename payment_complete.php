@@ -33,5 +33,35 @@
 
         <?php $ini_array = parse_ini_file("config.ini"); ?>
 
+        <?php
+        
+        date_default_timezone_set('Asia/Colombo');
+        /* ------------------------------------------------------------------------------
+          STEP1: Build PaycorpClientConfig object
+          ------------------------------------------------------------------------------ */
+        $clientConfig = new ClientConfig();
+        $clientConfig->setServiceEndpoint($ini_array['endpoint']);
+        $clientConfig->setAuthToken($ini_array['authToken']);
+        $clientConfig->setHmacSecret($ini_array['hmac']);
+        
+        /* ------------------------------------------------------------------------------
+          STEP2: Build PaycorpClient object
+          ------------------------------------------------------------------------------ */
+        $client = new GatewayClient($clientConfig);
+        
+        /* ------------------------------------------------------------------------------
+          STEP3: Build PaymentCompleteRequest object
+          ------------------------------------------------------------------------------ */
+        $completeRequest = new PaymentCompleteRequest();
+        $completeRequest->setClientId($ini_array['clientID']);
+        $completeRequest->setReqid($_GET['reqid']);
+        /* ------------------------------------------------------------------------------
+          STEP4: Process PaymentCompleteRequest object
+          ------------------------------------------------------------------------------ */
+        $completeResponse = $client->payment()->complete($completeRequest);
+
+        $creditCard = $completeResponse->getCreditCard();
+        $transactionAmount = $completeResponse->getTransactionAmount();
+        ?>
 </body>
 </html>
