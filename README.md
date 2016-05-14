@@ -1,4 +1,7 @@
-![logo](https://www.xlink.co.za/images/Logos/Paycorp_Holdings_Logo.png)
+![logo](https://crunchbase-production-res.cloudinary.com/image/upload/c_pad,h_140,w_140/v1397190687/33f261db7f5d8a298d899b00109acab0.jpg)
+
+Paycorp Advance Payment Pages API User Guide – Paycentre Web v.4.0
+
 #Introduction
 Paycorp advance payment pages allows merchants to process credit card payments in a PCI DSS compliant manner.
 Document Purpose / Intended Audience
