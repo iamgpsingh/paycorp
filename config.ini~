@@ -1,0 +1,9 @@
+
+[section]
+endpoint = https://sampath.paycorp.com.au/rest/service/proxy;
+hmac = ;
+authToken =;
+clientID = ;
+
+
+
