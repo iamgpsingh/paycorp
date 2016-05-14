@@ -148,8 +148,8 @@
                 </div>/.container-fluid 
             </nav>
             <div class="well well-sm" >  
-                <h4>Iframe Example for PCW4 using PHP</h4>
-                <p> Below IFrame is generating After the Initial Request to the new PCW Service.<br /> The corresponding Request is shown in the left side of the page You can add corresponding correct parameters for the form to check response from PCW.</p> <br />
+                <h4>Iframe</h4>
+                <p> Below ...</p> <br />
             </div>
 
             <table class="table table-condensed " style="width: 100%;">
@@ -177,9 +177,9 @@
                                     <tr><td><b>comment</b></td><td><input type="text" readonly="readonly" name="comment" class="input-sm" value="merchent_additional_data" />  </td></tr> 
 
 
-                                    <tr><td><b>Payment Amount<span style="color: red">*</span></b></td><td><input type="text" readonly="readonly" name="paymentAmount" class="input-sm" value="1000" />  </td></tr> 
+                                    <tr><td><b>Payment Amount<span style="color: red">*</span></b></td><td><input type="text"  name="paymentAmount" class="input-sm" value="1000" />  </td></tr> 
                                     <tr><td><b>Total Amount</b></td><td><input type="text" readonly="readonly" name="totalAmount" class="input-sm" value="0" />  </td></tr> 
-                                    <tr><td><b>Service Fee Amount</b></td><td><input type="text" readonly="readonly" name="serviceFeeAmount" class="input-sm" value="0" />  </td></tr> 
+                                    <tr><td><b>Service Fee Amount</b></td><td><input type="text" name="serviceFeeAmount" class="input-sm" value="0" />  </td></tr> 
                                     <tr><td><b>Currency<span style="color: red">*</span></b></td><td><input type="text" readonly="readonly" name="currency" class="input-sm" value="AUD" />  </td></tr> 
 
                                     <tr><td><b>Return Method</b></td><td><input type="text" readonly="readonly" name="returnMethod" class="input-sm" value="GET" />  </td></tr>
